@@ -40,11 +40,16 @@
                     <?php
                     $i++;
                     ?>
-                    <tr class="border-b">
+                    <tr class="border-b ">
                         <td class="text-center">{{ $usuario->nombre }}</td>
                         <td class="text-center">{{ $usuario->correo }}</td>
                     </tr>
                 @endforeach
+                <?php
+                if ($i == 0) {
+                    echo '<tr class="border-b "><td class="text-center">No hay registros</td></tr>';
+                }
+                ?>
             </tbody>
         </table>
         <div class="w-[70%] ">

@@ -28,7 +28,8 @@
         <table class=" w-[70%] h-2/3 text-[#5d6266]">
             <thead class="border-b-4">
                 <tr>
-                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
                     <th>Email</th>
                 </tr>
             </thead>
@@ -42,6 +43,7 @@
                     ?>
                     <tr class="border-b ">
                         <td class="text-center">{{ $usuario->nombre }}</td>
+                        <td class="text-center">{{ $usuario->apellido }}</td>
                         <td class="text-center">{{ $usuario->correo }}</td>
                     </tr>
                 @endforeach
